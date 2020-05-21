@@ -17,7 +17,7 @@ export default () => {
     return(
         <div>
             <CheckboxGroup fun={changeFilter}/>
-            <div id = "" style = "">
+            <div id="" style="overflow-y:scroll; overflow-x:hidden; height:400px;">
 
             </div>
         </div>
