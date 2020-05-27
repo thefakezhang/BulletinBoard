@@ -2,14 +2,17 @@ import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
 import Bulletin from "./Bulletin";
-//import App from "../App.js";
+import HomePage from "./HomePage";
 
 export default () => {
     return(
+        <div>
         <Switch>
-            {/* <Route exact path = "/" component = {App}></Route> */}
+            <Route exact path = "/" component = {HomePage}></Route>
             <Route exact path = "/home" component = {Bulletin}></Route>
         </Switch>
+        </div>
+        
 
     )
 
