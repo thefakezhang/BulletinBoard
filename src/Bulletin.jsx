@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import CheckboxGroup from './CheckboxGroup';
+import TabPanel from './Components/TabPanel';
+import { Button } from '@material-ui/core'
 
 export default () => {
     //Corresponds to whether the user wants to see tasks for [Translator, Proofreader, Subber, Editor, Thumbnailer, QA]
@@ -14,11 +16,18 @@ export default () => {
         //console.log(filter);
     }
 
+    var divStyle = {
+        overflowY: 'scroll', 
+        overflowX: 'hidden', 
+        height:'400px'
+    }
+
     return(
         <div>
             <CheckboxGroup fun={changeFilter}/>
-            <div id="" style="overflow-y:scroll; overflow-x:hidden; height:400px;">
-
+            <div id="" style={divStyle}>
+            <Button> This is my first button</Button>
+            <TabPanel></TabPanel>
             </div>
         </div>
     );
