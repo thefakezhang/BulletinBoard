@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import CheckboxGroup from './CheckboxGroup';
+import Box from '@material-ui/core/Box';
 
 export default () => {
     //Corresponds to whether the user wants to see tasks for [Translator, Proofreader, Subber, Editor, Thumbnailer, QA]
@@ -14,12 +15,13 @@ export default () => {
         //console.log(filter);
     }
 
+
     return(
         <div>
             <CheckboxGroup fun={changeFilter}/>
-            <div id="" style="overflow-y:scroll; overflow-x:hidden; height:400px;">
-
-            </div>
+            <Box color="primary.main">
+                Hello!
+            </Box>
         </div>
     );
 };
