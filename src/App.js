@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Bulletin from './Bulletin';
+import Bulletin from './Components/Bulletin';
+import Main from "./Components/Main"
+import {Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Bulletin />
+      {/* <Bulletin /> */}
+      <Main /> 
+      <Link to = "/home">Home</Link>
     </div>
   );
 }

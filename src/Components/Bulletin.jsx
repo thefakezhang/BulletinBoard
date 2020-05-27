@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import CheckboxGroup from './CheckboxGroup';
-import TabPanel from './Components/TabPanel';
+import TabPanel from './TabPanel';
 import { Button } from '@material-ui/core'
 
 export default () => {
