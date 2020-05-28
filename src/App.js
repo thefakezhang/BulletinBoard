@@ -36,9 +36,10 @@ render() {
   	<Router>
 	    <div className="App">
 	      <Main /> 
-	      <Link to = "/home">Home</Link>
-	      <Link to = "/progress">Progress</Link>
-	      <Progress /> 
+        <li><Link to = "/">First Page</Link></li>
+        <li><Link to = "/home">BB</Link></li>    
+	      <li><Link to = "/progress">Progress</Link></li>
+        
 	    </div>
     </Router>
   );

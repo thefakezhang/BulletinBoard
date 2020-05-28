@@ -17,7 +17,6 @@ export default () => {
     return(
         <div>
             <TabPanel></TabPanel>
-            <Link to ="/">Home</Link>
         </div>
     );
 };
