@@ -4,7 +4,7 @@ import CheckboxGroup from './CheckboxGroup';
 import TabPanel from './TabPanel';
 import Requests from './Requests';
 import { Button } from '@material-ui/core'
-import {Link} from '@material-ui/core';
+import {Link} from 'react-router-dom';
 
 export default () => {
 
