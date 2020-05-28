@@ -20,10 +20,11 @@ const useStyles = makeStyles({
   display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(0.5),
-    },
 });
+
+  // componentDidMount = (props) => {
+  //   console.log(this.props.todo);
+  // };
 
 export default function MediaCard() {
   const classes = useStyles();
@@ -51,7 +52,7 @@ export default function MediaCard() {
             Thumbnailer:
             QA:
           </Typography>
-          <Chip label="Requesting for Translator" icon={<FaceIcon />} />
+          <Chip label="Requesting for Translator" component="a" href="#chip" clickable/>
         </CardContent>
       </CardActionArea>
       <CardActions>
