@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Bulletin from './Components/Bulletin';
 import Main from "./Components/Main"
+import Progress from './Components/Progress';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -35,6 +36,8 @@ render() {
 	    <div className="App">
 	      <Main /> 
 	      <Link to = "/home">Home</Link>
+	      <Link to = "/progress">Progress</Link>
+	      <Progress /> 
 	    </div>
     </Router>
   );
