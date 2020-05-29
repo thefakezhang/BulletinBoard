@@ -15,8 +15,13 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-      .then(res => this.setState({ requests: res.data }));
+      .get('https://my-json-server.typicode.com/thefakezhang/BulletinBoard/rows')
+      .then(res => {
+      	const requests = res.data;
+      	console.log(res);
+      	this.setState({ requests });
+      }
+       );
   }
 
   // Toggle Complete

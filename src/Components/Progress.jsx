@@ -26,9 +26,9 @@ function getSteps() {
 function getStepContent(stepIndex) {
   switch (stepIndex) {
     case 0:
-      return 'Select campaign settings...';
+      return '...';
     case 1:
-      return 'What is an ad group anyways?';
+      return '......';
     case 2:
       return 'This is the bit I really care about!';
     case 3:
@@ -76,7 +76,7 @@ export default function HorizontalLabelPositionBelowStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>All steps completed</Typography>
-            <Button onClick={handleReset}>Reset</Button>
+            {/*<Button onClick={handleReset}>Reset</Button>*/}
           </div>
         ) : (
           <div>
