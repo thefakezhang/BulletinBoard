@@ -39,7 +39,8 @@ render() {
         <li><Link to = "/">First Page</Link></li>
         <li><Link to = "/home">BB</Link></li>    
 	      <li><Link to = "/progress">Progress</Link></li>
-        
+        <li><Link to = "/roles">Roles</Link></li>
+        <li><Link to = "/user/test">Test's user page</Link></li>
 	    </div>
     </Router>
   );
