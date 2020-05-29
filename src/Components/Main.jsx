@@ -6,6 +6,7 @@ import HomePage from "./HomePage";
 import Progress from "./Progress";
 import User from "./User";
 import RoleList from "./RoleList";
+import Identification from "./Identification";
 
 export default () => {
     return(
@@ -16,6 +17,7 @@ export default () => {
             <Route exact path = "/progress" component = {Progress}></Route>
             <Route path = "/roles" component = {RoleList}></Route>
             <Route path = "/user/:username" component = {User}></Route>
+            <Route path = "/id/:id" component = {Identification}></Route>
         </Switch>
         </div>
         
