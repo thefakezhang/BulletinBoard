@@ -52,7 +52,7 @@ export default function MediaCard() {
             Thumbnailer:
             QA:
           </Typography>
-          <Chip label="Requesting for Translator" component="a" href="#chip" clickable/>
+          <Chip label="Requesting Translator" component="a" href="#chip" clickable/>
         </CardContent>
       </CardActionArea>
       <CardActions>
