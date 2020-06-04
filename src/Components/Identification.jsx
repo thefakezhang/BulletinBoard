@@ -3,6 +3,7 @@ import {useState} from 'react';
 import Youtube from 'react-youtube';
 import {Card, CardContent, Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
 
 export default (props) => {
     const [temp, setTemp] = useState(
@@ -61,13 +62,13 @@ export default (props) => {
 
 
 class UserTag extends React.Component {
-   
+
 
     render(){
         return <Card variant = "outlined">
             <CardContent>
             <Typography className="title" color="textSecondary" gutterBottom>{this.props.role}</Typography>
-            <Typography variant="h5" component="h2">{this.props.user}</Typography>
+            <Typography variant="h5" component="h2"><Link to = {"/user/" + this.props.user}>{this.props.user}</Link></Typography>
             <Typography className="test" color="textSecondary">{this.props.time.toString()}</Typography>
             </CardContent>
         </Card>;
