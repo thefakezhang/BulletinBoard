@@ -5,6 +5,7 @@ import Bulletin from './Components/Bulletin';
 import Main from "./Components/Main";
 import HomePage from './Components/HomePage';
 import Progress from './Components/Progress';
+import FormDialog from './Components/FormDialog';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -48,6 +49,7 @@ render() {
         <li><Link to = "/walkthrough">Walkthrough</Link></li>
         <li><Link to = "/id/10">ID-10</Link></li>
         <li><Link to = "/user/test">Test's user page</Link></li>
+        <FormDialog></FormDialog>
 	    </div>
     </Router>
   );
