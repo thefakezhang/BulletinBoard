@@ -44,10 +44,10 @@ export default (props) => {
 
     return(
         <div>
-            <div style = {{ margin: '0 auto', fontSize: 72}}>ID-{temp.id}</div>
-            <div style = {{ margin: '0 auto', fontSize: 36}}>Status: {temp.status}</div>
+            <div style = {{ margin: '0 auto', fontSize: 72, minWidth: 650, maxWidth: 700}}>ID-{props.match.params.id}</div>
+            <div style = {{ margin: '0 auto', fontSize: 36, minWidth: 650, maxWidth: 700}}>Status: {temp.status}</div>
             <Youtube videoId = "z2LqC2y5JCY" opts = {opts} ></Youtube>
-            <div id = "contributors" style={{margin: '0 auto', fontSize: 36}}>
+            <div id = "contributors" style={{margin: '0 auto', fontSize: 36, minWidth: 650, maxWidth: 700}}>
                 {roles.map(
                     (roles) => {
                        return <UserTag role = {roles} user = {temp[roles]} time = {temp[roles+"_time"]}/>
